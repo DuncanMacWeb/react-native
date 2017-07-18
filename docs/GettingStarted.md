@@ -525,6 +525,8 @@ Select the "x86 Images" tab, then look for the **Marshmallow** API Level 23, x86
 
 Click "Next" then "Finish" to create your AVD. At this point you should be able to click on the green triangle button next to your AVD to launch it, then proceed to the next step.
 
+> If your AVD doesn't launch successfully, check that you have updated HAXM to version 6.1.1 or later, as earlier HAXM versions are known to conflict with Docker for Mac and VirtualBox. Even if Android Studio tells you that the update has been installed, you may still need to run the installer from inside the "extras" directory in your Android SDK directory. Look in `~/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager` and read [this thread](https://forums.docker.com/t/cant-using-docker-for-mac-with-android-emulator-haxm/8939/11) for details.
+
 <block class="native mac ios" />
 
 ## Running your React Native application
